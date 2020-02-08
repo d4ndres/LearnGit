@@ -1,4 +1,4 @@
-body {
+body {	
     /* background-color: aqua; */
     color: hotpink;
     text-align: center;
@@ -7,6 +7,13 @@ body {
     font-family: Helvetica;
     max-width: 1000px;
     margin: auto;
+}
+footer {
+	background: salmon;
+	width: 100%;
+	text-aling: center;
+	font-family: arial;
+	color: #000;
 }
 header {
     
