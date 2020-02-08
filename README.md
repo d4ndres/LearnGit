@@ -8,3 +8,11 @@ en este curso aprendes a manejar los comandos ++git++
 + add
 + log
 + commit 
+
++ branch
++ checkout
++ reset
++ rebase
++ clear
++ stash
++ cherry-pick
