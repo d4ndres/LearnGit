@@ -1,2 +1,5 @@
-# LearnGit
-sube tu dibujo a esta pagina, es el mejor lugar donde subirlos.
+## LearnGit
+Este es el curso de git y github de platzi por freddy vega
+---
+en este curso aprendes a manejar los comandos ++git++
+
