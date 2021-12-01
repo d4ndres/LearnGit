@@ -4,20 +4,59 @@
 <style>
 
 body{ 
-text-align: center;
+display: flex; 
+justify-content: center;
+align-items: center;
+flex-direction: column;
 color: hotpink; 
-margin: auto; 
-background: #0f0f5f 
+margin: auto;  
+min-height: 100vh;
+background: #0f0f0f;
 
-}</style>
+}
+
+.article{
+padding: 10px 20px;
+width: 500px;
+border: .5px #fff solid;
+background: #0f0f2f;	
+}
+.article h1{
+text-align:center;
+}
+header {
+	padding: 10px 20px;
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	color:  #fff;
+	border: .5px #fff solid;
+	background: #0f0f2f;
+	font-size: 1.2em;
+}
+header * {
+	line-height: 0;
+	padding: 10px;
+	margin: 0;
+}
+
+</style>
 </head>
 <body>
-<h1>Hey este es un nuevo blog</h1>
-<p> Que esperas para suscribirte Pensamos siempre en el futuro</p>
+
+<header>
+	<h2>Cabeza de Dandres</h2>
+	<p>Libreta de conocimientos</p>
+</header>
+<div class="article">
+<h1>Mi conocimiento sobre git</h1>
+<p>Se explicaran cada uno de los comandos vitales para poder trabajar con git</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
 </body>
