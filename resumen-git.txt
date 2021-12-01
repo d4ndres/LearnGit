@@ -1,0 +1,52 @@
+Resumen Git 
+
+El flujo de trabajo de git consiste en generar archivos en el área de trabajo una vez tengamos un avance se lleva al staging y cuando que debamos guardar o exista una bifurcacion en el flujo de trabajo o cuando se abre un nueva seccion o cuando se tenga un avance signigicativo lo agregamos al repositorio local. posterior a esto es llevar nuestro avance local a un repositorio remoto en el cual podremos trabaja con un grupo de trabajo en la nube.
+
+Podemos traer un repositorio en la nube a nuestro computador clonando el repositorio de la nube y generando un repositorio local
+
+
+
+git init
+
+Genera un git staging o "Area de preparacion"
+Genera un repositorio Local
+
+
+git add namefile
+
+Pasamos la información del área de trabajo al staging
+en vez del nombre del archivo tambien se puede colocar un punto "." para agreagar todos los cambios.
+
+git commit 
+
+Agrega la informacion del staging al repositorio. 
+
+-m agregamos un mensaje entre commila al lado del flat "-m" relacionado con la informacion subida
+
+
+git checkout
+
+Permite movernos entre el historial de puntos de guardado o commit.
+escribiendo al lado el sha relacionado al cual nos vamos a trasnladar
+
+
+git rm
+Borra de diferentes maneras los archivos dados dependiendo del flat correlacionado
+
+--cached Elimina los archivos de nuetro repositorio local y del área de staging manteniendolos en el disco duro
+
+--force Elimina los archicos del git y del disco duro
+
+Estos archivos se podran recuperar en el registro existente de git, regresando a un punto anterior y trayendolo de vulta con un a nueva rama.
+
+
+
+git reset
+Nos ayuda a volver a versiones anteriores por lo que podremos ver cada aspecto que existia en el momento podemos perder informacion en la que se ha trabajado por lo que su diferentes Flats cumplen un funcion diferente
+
+--soft Maniene los datos de staging en memoria y ponemos volver con el comando checkout master
+
+--hard borra toda la informacion entre la version final y a la que volvimos. podemos volver unicamente si conservamos el sha16 del ultimo comiit 
+
+--head Devuelve los datos del staging al disco duro por lo que tambien se puede entender como un comando que limpia el staging y nos mantiene la version sin cambios
+
