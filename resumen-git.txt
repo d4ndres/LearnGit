@@ -1,9 +1,8 @@
 Resumen Git 
 
-El flujo de trabajo de git consiste en generar archivos en el área de trabajo una vez tengamos un avance se lleva al staging y cuando que debamos guardar o exista una bifurcacion en el flujo de trabajo o cuando se abre un nueva seccion o cuando se tenga un avance signigicativo lo agregamos al repositorio local. posterior a esto es llevar nuestro avance local a un repositorio remoto en el cual podremos trabaja con un grupo de trabajo en la nube.
+El flujo de trabajo de git consiste en generar archivos en el área de trabajo una vez tengamos un avance se lleva al staging y cuando que debamos guardar o exista una bifurcación en el flujo de trabajo o cuando se abre un nueva seccion o cuando se tenga un avance significativo lo agregamos al repositorio local. posterior a esto es llevar nuestro avance local a un repositorio remoto en el cual podremos trabaja con un grupo de trabajo en la nube.
 
 Podemos traer un repositorio en la nube a nuestro computador clonando el repositorio de la nube y generando un repositorio local
-
 
 
 git init
@@ -15,38 +14,62 @@ Genera un repositorio Local
 git add namefile
 
 Pasamos la información del área de trabajo al staging
-en vez del nombre del archivo tambien se puede colocar un punto "." para agreagar todos los cambios.
+En vez del nombre del archivo también se puede colocar un punto "." para agregar todos los cambios.
 
 git commit 
 
-Agrega la informacion del staging al repositorio. 
+Agrega la información del staging al repositorio. 
 
--m agregamos un mensaje entre commila al lado del flat "-m" relacionado con la informacion subida
+-m agregamos un mensaje entre comilla al lado del flat "-m" relacionado con la información subida
 
 
 git checkout
 
 Permite movernos entre el historial de puntos de guardado o commit.
-escribiendo al lado el sha relacionado al cual nos vamos a trasnladar
+escribiendo al lado el sha relacionado al cual nos vamos a trasladar
 
 
 git rm
 Borra de diferentes maneras los archivos dados dependiendo del flat correlacionado
 
---cached Elimina los archivos de nuetro repositorio local y del área de staging manteniendolos en el disco duro
+--cached Elimina los archivos de nuestro repositorio local y del área de staging manteniéndolos en el disco duro
 
---force Elimina los archicos del git y del disco duro
+--force Elimina los archivos del git y del disco duro
 
-Estos archivos se podran recuperar en el registro existente de git, regresando a un punto anterior y trayendolo de vulta con un a nueva rama.
+Estos archivos se podrán recuperar en el registro existente de git, regresando a un punto anterior y trayéndolo de vuelta con una nueva rama.
 
 
 
 git reset
-Nos ayuda a volver a versiones anteriores por lo que podremos ver cada aspecto que existia en el momento podemos perder informacion en la que se ha trabajado por lo que su diferentes Flats cumplen un funcion diferente
+Nos ayuda a volver a versiones anteriores por lo que podremos ver cada aspecto que existia en el momento podemos perder información en la que se ha trabajado por lo que su diferentes Flats cumplen un función diferente
 
---soft Maniene los datos de staging en memoria y ponemos volver con el comando checkout master
+--soft Mantiene los datos de staging en memoria y ponemos volver con el comando checkout master
 
---hard borra toda la informacion entre la version final y a la que volvimos. podemos volver unicamente si conservamos el sha16 del ultimo comiit 
+--hard borra toda la información entre la versión final y a la que volvimos. podemos volver unicamente si conservamos el sha16 del ultimo comiit 
 
---head Devuelve los datos del staging al disco duro por lo que tambien se puede entender como un comando que limpia el staging y nos mantiene la version sin cambios
+--head Devuelve los datos del staging al disco duro por lo que tambien se puede entender como un comando que limpia el staging y nos mantiene la versión sin cambios
+
+
+git branch
+
+Si ejecutamos el comando solo nos muestra las ramas que se han creado anteriormente.
+
+Crea una rama en el historial del repositorio que sera identificada con el nombre que se coloque al lado de branch.
+con git checkout nombredelarama nos moveremos a esta rama
+git checkout -b nombredenuevarama nos genera y lleva a una nueva rama
+
+git show
+nos muestra un resument de lo que se ha realizado
+
+
+git merge unarama
+
+combina los cambios de una rama nombrada a la rama en la que estamos ubicado en el momento de ejecutarla. Pueden existir conflictos por los que el editor de codigo nos ayuda a solucionarlo o nosotros lo podemos solucionar eliminando y manteniendo lo deseado.
+
+
+Algo muy importante es que el estandar apartir del 2020 es que la rama principal es llamada main en vez de master
+por lo que al iniciar un repositorio deveríamos crear una rama main y colocarla como principal
+o crear una rama agregar el flat -M al comando checkout y colocar main lo que translada la información a esta nueva rama
+
+git branch -M main
 
