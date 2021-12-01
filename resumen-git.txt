@@ -52,10 +52,24 @@ Nos ayuda a volver a versiones anteriores por lo que podremos ver cada aspecto q
 
 git branch
 
+Si ejecutamos el comando solo nos muestra las ramas que se han creado anteriormente.
+
 Crea una rama en el historial del repositorio que sera identificada con el nombre que se coloque al lado de branch.
 con git checkout nombredelarama nos moveremos a esta rama
 git checkout -b nombredenuevarama nos genera y lleva a una nueva rama
 
 git show
 nos muestra un resument de lo que se ha realizado
+
+
+git merge unarama
+
+combina los cambios de una rama nombrada a la rama en la que estamos ubicado en el momento de ejecutarla. Pueden existir conflictos por los que el editor de codigo nos ayuda a solucionarlo o nosotros lo podemos solucionar eliminando y manteniendo lo deseado.
+
+
+Algo muy importante es que el estandar apartir del 2020 es que la rama principal es llamada main en vez de master
+por lo que al iniciar un repositorio deveríamos crear una rama main y colocarla como principal
+o crear una rama agregar el flat -M al comando checkout y colocar main lo que translada la información a esta nueva rama
+
+git branch -M main
 
