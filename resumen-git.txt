@@ -73,3 +73,43 @@ o crear una rama agregar el flat -M al comando checkout y colocar main lo que tr
 
 git branch -M main
 
+
+un comando muy interesante es
+
+git log --oneline --graph --all -decorate
+
+El cual deberiamos asignar a un alias
+
+
+
+Podemos agregar eticatas a cada commit lo que resulta en una forma diferente de organizar las versiones en github
+
+git tag -a v0.1 -m "mensaje de descripcion" shadelcommit
+
+de este modo podemos agregarle un tag a cada commit que deseemos
+
+Para ver que tags se han creado y su referemcia usamos el comando
+
+git show-ref --tags
+
+git tag 
+
+tambien permite ver que tags existen pero sin detalles
+
+
+para llevarlos de local a la nube usamos el comando
+
+git push origin --tags
+
+lo cual envia nuestros tags d
+
+Tambien podemos borrar los tags con el comando
+
+git tag -d nombredeltagaborrar
+
+
+al enviar estos tags al repositorio remoto
+
+pero no los borra en el github. usando una sintaxis interna de github lo podemos borrar de la siguienterforma
+
+git push origin :refs/tags/nombredeltagaborrar
