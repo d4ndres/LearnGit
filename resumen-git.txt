@@ -73,3 +73,41 @@ o crear una rama agregar el flat -M al comando checkout y colocar main lo que tr
 
 git branch -M main
 
+
+----------------------------------
+Relacionando un repositorio local con un repositorio remoto
+
+git remote add origigin HTTPS
+
+git remote es el comando que usaremos add es la llave con la cual agregamos y origin es el nombre de referencia del repositorio remoto. por convencion el repositorio remoto es llamdo origin. HTTPS es la ubicacion del repositorio remoto.
+
+git remote
+
+muestra los repositorios remotos
+
+
+Muchas veces existira el caso en el que el repositorio remoto no esta relacionado por lo que primero debemos traer la informacion del repositorio remoto
+
+git pull origin master
+
+nostrae la rama master del origin
+
+cuando existe una historia en el repositorio remoto se presenta un error que no nos permite realizar el merge de union entre el repositorio local y el remoto
+
+por lo que el comando 
+
+git pull origin master --allow-unrelated-histories
+
+Sera un buen aliado que nos permite realizar este merges
+
+
+
+git push origin main
+git push lugar-de-referencia-del-repositorio-remoto rama-a-enviar
+
+con el comando push enviamos los cambios de nuestro repositorio local al repositorio remoto.
+
+
+
+
+

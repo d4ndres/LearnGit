@@ -1,19 +1,9 @@
-hoy es 13 de enero, he aprendedido ahacer una pagina web
-y estoy viendo a freddy vega esplicandome que es git
+Resumen
+Han pasado un par de años. Ahora estoy haciendo trabajo de investigación ademas de trabajar en la tesis de grado de Ing. Mecatrónica
+He acabado las materias de la universidad por lo que tengo más tiempo para mi y parte de ese tiempo lo quiero dedica a enseñar.
 
+Ahora que leo mi pasado. Sigue siendo epico la idea de que en algún futuro trabajar con sensores cerebralez y computación.
 
+El sabor y el peso del color amarillo.
 
-construllendo mi vida
-Estoy aprendiendo esto 
-ha pasado mycho tiempo y ahora estoy haciendo mi doctorado en neurologia
-
-agredando un cambio desde commit experimentos
-buenome gustaria agregar un segundo cambio 
-hoy es 7 de ferbrero
-
-
-masgter Xd
-
-
-agregando nuevo contenido paraprobar el rebase
-
+30/10/21
