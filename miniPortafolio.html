@@ -7,24 +7,46 @@ body{
 display: flex; 
 justify-content: center;
 align-items: center;
+flex-direction: column;
 color: hotpink; 
 margin: auto;  
 min-height: 100vh;
 background: #0f0f0f;
+
 }
 
 .article{
-padding: 20px 40px;
+padding: 10px 20px;
+width: 500px;
 border: .5px #fff solid;
 background: #0f0f2f;	
 }
 .article h1{
 text-align:center;
 }
+header {
+	padding: 10px 20px;
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	color:  #fff;
+	border: .5px #fff solid;
+	background: #0f0f2f;
+	font-size: 1.2em;
+}
+header * {
+	line-height: 0;
+	padding: 10px;
+	margin: 0;
+}
+
 </style>
 </head>
 <body>
-
+<header>
+	<h2>Cabeza de Dandres</h2>
+	<p>Libreta de conocimientos</p>
+</header>
 <div class="article">
 <h1>Mi conocimiento sobre git</h1>
 <p>Se explicaran cada uno de los comandos vitales para poder trabajar con git</p>
